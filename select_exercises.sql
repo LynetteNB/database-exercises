@@ -10,4 +10,4 @@ SELECT name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
 SELECT 'Albums whose sales were over 20 million' AS 'Info';
 SELECT name FROM albums WHERE sales < 20;
 SELECT 'Albums with ''rock'' as a genre' AS 'Info';
-SELECT albums FROM albums WHERE genre = 'rock';
+SELECT name FROM albums WHERE genre = 'rock';
