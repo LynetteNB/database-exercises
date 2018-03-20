@@ -12,6 +12,6 @@ SELECT last_name FROM employees WHERE last_name LIKE '%e' or last_name LIKE 'e%'
 # Employees whose last name starts AND ends with E
 SELECT last_name FROM employees WHERE last_name LIKE '%e' and last_name LIKE 'e%' ORDER BY emp_no;
 # Employees hired in the 90s and born on Christmas
-SELECT first_name, last_name, hire_date, birth_date FROM employees WHERE hire_date LIKE '199%' and birth_date LIKE '%12-25' ORDER BY hire_date DESC, birth_date DESC;
+SELECT first_name, last_name, hire_date, birth_date FROM employees WHERE hire_date LIKE '199%' and birth_date LIKE '%12-25' ORDER BY birth_date, hire_date DESC;
 # Employees with a q in their last name but not qu
 SELECT last_name FROM employees WHERE last_name LIKE '%q%' and last_name NOT LIKE '%qu%';
